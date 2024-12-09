@@ -1,14 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import { IoSearch } from "react-icons/io5";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/app/components/sheet"
 import Link from "next/link";
 const Hero = () => {
   return (
@@ -36,36 +28,7 @@ const Hero = () => {
                 <span className="block w-6 h-1 bg-black"></span>
                 <span className="block w-6 h-1 bg-black"></span>
               </div>
-            {/* </SheetTrigger> */}
-            <SheetContent>
-              <SheetHeader>
-                <SheetTitle>Navigation</SheetTitle>
-              </SheetHeader>
-              <nav className="flex flex-col gap-4 text-lg text-[#726E8D]">
-                <Link href="/" className="hover:text-[#5a526c]">
-                 
-                </Link>
-                <Link href="/" className="hover:text-[#5a526c]">
-                  
-                </Link>
-                <Link href="/" className="hover:text-[#5a526c]">
-                  
-                </Link>
-                <Link href="/" className="hover:text-[#5a526c]">
-                 
-                </Link>
-                <Link href="/" className="hover:text-[#5a526c]">
-                 
-                </Link>
-                <Link href="/" className="hover:text-[#5a526c]">
-                 
-                </Link>
-                <Link href="/" className="hover:text-[#5a526c]">
-                 
-                </Link>
-              </nav>
-            </SheetContent>
-          {/* </Sheet>  */}
+         
         </div>
 </div>
         {/* Desktop Navigation links */}
