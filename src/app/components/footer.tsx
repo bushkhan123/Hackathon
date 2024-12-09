@@ -1,31 +1,12 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import Link from 'next/link';
 import React from 'react';
 import { FaLinkedin, FaInstagram, FaFacebookSquare, FaTwitter, FaPinterest } from "react-icons/fa";
 import { IoLogoSkype } from "react-icons/io";
 
-
-import Hero from "./components/hero";
-import Brand from "./components/brand";
-import Ceramics from "./components/ceramics";
-import Product from "./components/product";
-import Benefit from "./components/benefit";
-import Touch from "./components/touch";
-import ProductListing from "./productlisting/page";
-import footer from "./components/footer"
-
-export default function Home() {
+const Footer = () => {
   return (
-   <>
-   <Hero />
-   <Brand />
-   <Ceramics />
-   <Product />
-   <Benefit />
-   <Touch />
-<ProductListing/>
-   
-<div className='px-6 md:px-12 py-8 bg-[#2A254B] mt-8'>
+    <>
+      <div className='px-6 md:px-12 py-8 bg-[#2A254B] mt-8'>
         <div className="flex flex-wrap gap-12 md:gap-[100px] lg:gap-[200px]">
           {/* Menu Section */}
           <div className="text-gray-500 w-full sm:w-auto">
@@ -62,7 +43,7 @@ export default function Home() {
               <h1><Link href={'/'}>Return policy</Link></h1>
             </div>
           </div>
-           
+
           {/* Mailing List Section */}
           <div className="text-white w-full sm:w-auto">
             <h1 className="text-lg md:text-xl font-bold">Join our mailing list</h1>
@@ -96,6 +77,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-   </>
+    </>
   );
-}
+};
+
+export default Footer;
