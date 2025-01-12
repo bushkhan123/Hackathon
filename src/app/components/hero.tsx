@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
 import { IoSearch } from "react-icons/io5";
 import Link from "next/link";
 const Hero = () => {
@@ -18,10 +20,13 @@ const Hero = () => {
           <h1 className="text-[#22202E] text-2xl font-semibold text-left lg:text-center">
             Avion
           </h1>
-
+         
           {/* Right: Cart and Profile icons for large screens */}
           <div className="hidden lg:flex gap-3 text-xl lg:flex-1 justify-end">
-           
+          <div className="hidden lg:flex gap-3 text-xl lg:flex-1 justify-end">
+            <MdOutlineShoppingCart />
+            <CgProfile />
+          </div>
             <div className="cursor-pointer lg:hidden flex flex-col gap-1 font-light">
               
                 <span className="block w-6 h-1 bg-black"></span>
@@ -30,7 +35,9 @@ const Hero = () => {
               </div>
          
         </div>
+       
 </div>
+
         {/* Desktop Navigation links */}
         <nav className="hidden lg:flex w-[675px] justify-between items-center h-1/2 text-[#726E8D]">
           <Link href="/" className="hover:text-[#5a526c] border-b-2 border-transparent hover:border-[#5a526c] pb-1">
@@ -55,13 +62,17 @@ const Hero = () => {
             Cutlery
           </Link>
         </nav>
+       
+
       </header>
 
       <section>
         <div className='px-8 py-12'>
           <div className='flex flex-col md:flex-row'>
-            <div className='w-full md:w-[60%] h-auto md:h-[580px] border border-black bg-[#2A254B] text-white px-4 md:px-12 py-6 md:py-12 flex flex-col justify-between'>
-              <div>
+          
+            <div className='w-full md:w-[60%] h-auto md:h-[580px] border border-black bg-[#2A254B] text-white px-6 md:px-14 py-8 md:py-12 flex flex-col justify-between'>
+             <div>
+            
                 <h1 className='text-xl md:text-3xl md:text-left'>
                   The furniture brand for the future with <br /> the timeless designs
                 </h1>
@@ -81,11 +92,11 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className='w-full md:w-[40%] h-auto md:h-[580px] bg-white flex justify-center items-end'>
-              <Image src={'/chair.png'} width={471} height={400} alt='right' />
+            {/* <div className='w-full md:w-[40%] h-auto md:h-[580px] bg-white flex justify-center items-end'> */}
+               <Image src={'/chair.png'} width={471} height={465} alt='right' /> 
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </section>
     </>
   )
